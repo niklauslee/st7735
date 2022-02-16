@@ -1,6 +1,6 @@
 # Overview
 
-ST7735 is a color TFT LCD driver.
+Kaluma library for ST7735 (Color TFT LCD driver).
 
 You can get displays from belows:
  
@@ -21,14 +21,20 @@ GP20 | D/C
 GP21 | RST
 GP17 | CS
 
-![1615810330372.png](/api/projects/niklauslee/st7735/photos/1615810330372.png)
+![circuit](https://github.com/niklauslee/st7735/blob/main/images/circuit.jpg?raw=true)
+
+# Install
+
+```sh
+npm i https://github.com/niklauslee/st7735
+```
 
 # Usage
 
 You can initialize ST7735 driver using SPI interface as below:
 
 ```js
-const {ST7735} = require('@niklauslee/st7735');
+const {ST7735} = require('st7735');
 const st7735 = new ST7735();
 
 var options = { // ST7735R 1.44"
